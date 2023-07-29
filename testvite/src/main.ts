@@ -10,7 +10,7 @@ import 'element-plus/dist/index.css'
 
 import './permission'
 
-import store from './store/index.js'
+import pinia from './store/index'
 
 
-createApp(App).use(router).use(ElementPlus).use(store).mount('#app')
+createApp(App).use(router).use(ElementPlus).use(pinia).mount('#app')

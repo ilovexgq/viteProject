@@ -1,19 +1,19 @@
 <template>
-    <div>one
+  <div>
+    one
 
-        <el-button type="primary" @click="clickBtm">Primary</el-button>
-    </div>
+    <el-button type="primary" @click="clickBtm">Primary</el-button>
+  </div>
 </template>
 
 <script lang="ts" setup>
-// import { useStore } from '../store/index'
-const store = useStore()
+import { TestStore } from "../store/modules/test";
 
+const testStore = TestStore();
 
-const clickBtm = ()=>{
-    console.log(1)
-    store.setToken('255')
-}
-
+const clickBtm = () => {
+  console.log(1);
+  testStore.setToken("255");
+};
 </script>
 
